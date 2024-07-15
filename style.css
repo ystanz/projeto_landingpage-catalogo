@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Quicksand:wght@300;400;600&display=swap');
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+header {
+  background-color: #75221B;
+} & h1 {
+  color: #F2E9E4;
+  font-family: 'Lora', serif;
+  letter-spacing: .2rem;
+  }
+
+p.lead {
+  margin-bottom: 0;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width: 570px;
+  height: 400px;
+}
+
+.header-buttons {
+  background-color: transparent;
+} & a {
+  color: #F2E9E4;
+  border: 1px solid #F2E9E4;
+  font-size: .9rem;
+  padding: .3rem;
+}
+
+.title {
+  font-family: 'Lora', serif;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: #75221B;
+}
+
+form input[type="search"] {
+  border: none;
+  }
+
+.form-filter {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  }
+
+.bi-search {
+  border-left: 1px solid #ccc;
+  padding-left: .5rem;
+}
+
+
+button.btn, input.form-control {
+  padding-bottom: .1rem;
+  }
