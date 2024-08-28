@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>AbraVinhos - Vendas & Paixão</title>
+  <title>Abra A Garrafa</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
@@ -14,12 +14,12 @@
   <header>
     <div class="container mb-3">
       <div class="row">
-        <h1 class="text-center text-uppercase mt-2">AbraVinhos</h1>
-      </div>
-      <div class="row pb-3 pt-1">
-        <div class="col-12 d-flex justify-content-center">
-          <a href="#" class="btn text-uppercase header-buttons">Catálogo</a>
-          <a href="#" class="btn text-uppercase header-buttons ms-2">Contato</a>
+        <div class="col-12 d-flex justify-content-between align-items-center">
+          <h1 class="col-6 mt-2"><img src="./assets/img/logo1.png" alt="logo" width="150px" /></h1>
+          <div class="col-6 d-flex flex-column">
+            <a href="#catalogo" class="btn text-uppercase header-buttons mb-2">Catálogo</a>
+            <a href="https://wa.link/d4asyb" target="blank" class="btn text-uppercase header-buttons">Contato</a>
+          </div>
         </div>
       </div>
   </header>
@@ -27,33 +27,44 @@
     <div class="container">
       <div class="row text-center">
         <p class="title">
-           Bem-vindo a AbraVinhos! Aqui compartilhamos uma nova descoberta de sabores que carregam uma história
+          Bem-vindo a <br>Abra A Garrafa!</br> Aqui compartilhamos uma nova descoberta de sabores que carregam uma
+          história
         </p>
       </div>
       <div class="row text-center">
         <p class="lead">
-           Descubra grandes achados de nosso portfólio! Explore nossos rótulos em destaque
+          Descubra grandes achados de nosso portfólio! Explore nossos rótulos em destaque
         </p>
         <i class="bi bi-chevron-compact-down fs-1"></i>
+      </div>
+    </div>
     <!--Carrosel-->
     <div class="container mb-3 section-carousel">
-      <small>Aqui vai alguns produtos em promoçao ou novidades etc</small>
       <div class="carousel carousel-fade slide" data-bs-ride="carousel" id="initial-carousel">
         <div class="carousel-inner">
           <div data-bs-interval="5000" class="carousel-item active">
-            <img src="./assets/img/carousel_photo1.jpg" class="d-block w-100" alt="...">
+            <img src="./assets/img/carousel/carousel_photo1.jpg" class="d-block w-100" alt="...">
           </div>
           <div data-bs-interval="5000" class="carousel-item">
-            <img src="./assets/img/carousel_photo2.jpg" class="d-block w-100" alt="...">
+            <img src="./assets/img/carousel/carousel_photo2.jpg" class="d-block w-100" alt="...">
           </div>
           <div data-bs-interval="5000" class="carousel-item">
-            <img src="./assets/img/carousel_photo3.jpg" class="d-block w-100" alt="...">
+            <img src="./assets/img/carousel/carousel_photo3.jpg" class="d-block w-100" alt="...">
           </div>
           <div data-bs-interval="5000" class="carousel-item">
-            <img src="./assets/img/carousel_photo4.jpg" class="d-block w-100" alt="...">
+            <img src="./assets/img/carousel/carousel_photo4.jpg" class="d-block w-100" alt="...">
           </div>
           <div data-bs-interval="5000" class="carousel-item">
-            <img src="./assets/img/carousel_photo5.jpg" class="d-block w-100" alt="...">
+            <img src="./assets/img/carousel/carousel_photo5.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div data-bs-interval="5000" class="carousel-item">
+            <img src="./assets/img/carousel/carousel_photo6.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div data-bs-interval="5000" class="carousel-item">
+            <img src="./assets/img/carousel/carousel_photo7.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div data-bs-interval="5000" class="carousel-item">
+            <img src="./assets/img/carousel/carousel_photo8.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
         <div class="carousel-indicators">
@@ -62,12 +73,16 @@
           <button type="button" data-bs-target="#initial-carousel" data-bs-slide-to="2"></button>
           <button type="button" data-bs-target="#initial-carousel" data-bs-slide-to="3"></button>
           <button type="button" data-bs-target="#initial-carousel" data-bs-slide-to="4"></button>
+          <button type="button" data-bs-target="#initial-carousel" data-bs-slide-to="5"></button>
+          <button type="button" data-bs-target="#initial-carousel" data-bs-slide-to="6"></button>
+          <button type="button" data-bs-target="#initial-carousel" data-bs-slide-to="7"></button>
         </div>
       </div>
     </div>
     <!--Fim do carrosel-->
     <!--Catálogo de produtos com filtro-->
-    <div class="container mt-5">
+    <div>
+      <!-- <div class="container mt-5">
       <div class="row">
         <p class="title">
           Descubra nossa seleção especial de vinhos
@@ -96,8 +111,1521 @@
         <input class="form-control" type="search" placeholder="Pesquisar por nome"/>
         <button class="btn" type="submit"><i class="bi bi-search"></i></button>
       </form>
+    </div> -->
     </div>
     <!--Fim do catálogo-->
+    <!-- Início da Carta de Vinhos -->
+    <div class="container mt-5" id="catalogo">
+      <div class="row text-center">
+        <p class="title">
+          Descubra nossa seleção especial de vinhos
+        </p>
+        <p class="text">
+          Escolha em nossa vitrine de vinhos entre <b>Tintos</b>, <b>Brancos</b>, <b>Rosés</b> ou <b>Espumantes</b>.
+        </p>
+        <nav class="nav nav-tabs" id="nav-tabs">
+          <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#espumantes">Espumantes</button>
+          <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#brancos">Brancos</button>
+          <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#roses"">Rosés</button>
+         <button type=" button" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tintos">Tintos</button>
+        </nav>
+        <section id="produtos">
+          <div class="tab-content text-center">
+            <div class="tab-pane" id="espumantes">
+              <div class="row">
+                <h1 class="title mt-4 mb-3 p-4">Espumantes</h1>
+              </div>
+              <div class="row d-flex justify-content-center">
+                <div class="col-sm-10 col-md-6 col-lg-4 mt-5">
+                  <div class="card text-center border-none">
+                    <img src="./assets/img/espumantes/La-Roche-Brut-Rose.png" class="card-img-top"
+                      alt="Vinho espumante La Roche Brut Rosé" />
+                    <h2 class="cards-title mt-3">La Roche Brut Rosé</h2>
+                    <div class="card-body">
+                      <p>Tem ótima tipicidade varietal, é gostoso de beber e apresenta muito boa relação
+                        preço-qualidade, portanto, perfeito para o consumo cotidiano. De cor vermelho-violáceo
+                        brilhante, com aroma de frutas vermelhas, ervas e especiarias. Na boca é saboroso, frutado,
+                        com médio-corpo e taninos macios.</p>
+                      <div class="accordion" id="features">
+                        <div class="accordion-item border-0 mt-4 mb-4">
+                          <h2 class="accordion-header text-start" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <button class="title-sm" type="button">
+                              Características<i class="bi bi-chevron-compact-down fs-1 ms-3"></i>
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#features">
+                            <div class="accordion-body">
+                              <ul class="text-start p-0">
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/proced.svg?v=1655515711" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Produtor</b></div>
+                                      <div class="col-12">
+                                        <p>Viña Undurraga</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/pais-1.svg?v=1655512288" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Região/ País</b></div>
+                                      <div class="col-12">
+                                        <p>Valle Central, Chile</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/uva.svg?v=1655515544" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Uvas</b></div>
+                                      <div class="col-12">
+                                        <p>Carmenérè</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/regi.svg?v=1655512550" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Graduação acoólica</b></div>
+                                      <div class="col-12">
+                                        <p>13%</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/olfat-2.svg?v=1655515285" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Dica de harmonização</b></div>
+                                      <div class="col-12">
+                                        <p>Iscas de carne com pimentão, macarrão à
+                                          bolonhesa, quiche de
+                                          tomate com manjericão</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <strong class="title-md mb-3">R$ 39,90</strong>
+                        <div class="card-link mt-4 mb-2">
+                          <a href="#" class="btn btn-primary fs-5 p-3 w-100">Quero esse</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-4 mt-5">
+                  <div class="card text-center border-none">
+                    <img src="./assets/img/espumantes/La-Roche-Brut.png" class="card-img-top"
+                      alt="Vinho espumante La Roche Brut" />
+                    <h2 class="cards-title mt-3">La Roche Brut</h2>
+                    <div class="card-body">
+                      <p>Tem ótima tipicidade varietal, é gostoso de beber e apresenta muito boa relação
+                        preço-qualidade, portanto, perfeito para o consumo cotidiano. De cor vermelho-violáceo
+                        brilhante, com aroma de frutas vermelhas, ervas e especiarias. Na boca é saboroso, frutado,
+                        com médio-corpo e taninos macios.</p>
+                      <div class="accordion" id="features">
+                        <div class="accordion-item border-0 mt-4 mb-4">
+                          <h2 class="accordion-header text-start" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <button class="title-sm" type="button">
+                              Características<i class="bi bi-chevron-compact-down fs-1 ms-3"></i>
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#features">
+                            <div class="accordion-body">
+                              <ul class="text-start p-0">
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/proced.svg?v=1655515711" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Produtor</b></div>
+                                      <div class="col-12">
+                                        <p>Viña Undurraga</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/pais-1.svg?v=1655512288" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Região/ País</b></div>
+                                      <div class="col-12">
+                                        <p>Valle Central, Chile</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/uva.svg?v=1655515544" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Uvas</b></div>
+                                      <div class="col-12">
+                                        <p>Carmenérè</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/regi.svg?v=1655512550" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Graduação acoólica</b></div>
+                                      <div class="col-12">
+                                        <p>13%</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/olfat-2.svg?v=1655515285" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Dica de harmonização</b></div>
+                                      <div class="col-12">
+                                        <p>Iscas de carne com pimentão, macarrão à
+                                          bolonhesa, quiche de
+                                          tomate com manjericão</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <strong class="title-md mb-3">R$ 39,90</strong>
+                        <div class="card-link mt-4 mb-2">
+                          <a href="#" class="btn btn-primary fs-5 p-3 w-100">Quero esse</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="brancos">
+              <div class="row">
+                <h1 class="title mt-4 mb-3 p-4">Vinhos Brancos</h1>
+              </div>
+              <div class="row d-flex justify-content-center">
+                <div class="col-sm-10 col-md-6 col-lg-4 mt-5">
+                  <div class="card text-center border-none">
+                    <img src="./assets/img/brancos/Mi-Pueblo-Sauvignon-Blanc.png" class="card-img-top"
+                      alt="Vinho branco Mi Pueblo Sauvignon Blanc" />
+                    <h2 class="cards-title mt-3">Mi Pueblo Sauvignon Blanc</h2>
+                    <div class="card-body">
+                      <p>Tem ótima tipicidade varietal, é gostoso de beber e apresenta muito boa relação
+                        preço-qualidade, portanto, perfeito para o consumo cotidiano. De cor vermelho-violáceo
+                        brilhante, com aroma de frutas vermelhas, ervas e especiarias. Na boca é saboroso, frutado,
+                        com médio-corpo e taninos macios.</p>
+                      <div class="accordion" id="features">
+                        <div class="accordion-item border-0 mt-4 mb-4">
+                          <h2 class="accordion-header text-start" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <button class="title-sm" type="button">
+                              Características<i class="bi bi-chevron-compact-down fs-1 ms-3"></i>
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#features">
+                            <div class="accordion-body">
+                              <ul class="text-start p-0">
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/proced.svg?v=1655515711" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Produtor</b></div>
+                                      <div class="col-12">
+                                        <p>Viña Maipo</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/pais-1.svg?v=1655512288" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Região/ País</b></div>
+                                      <div class="col-12">
+                                        <p>Valle del Maipo, Chile</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/uva.svg?v=1655515544" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Uvas</b></div>
+                                      <div class="col-12">
+                                        <p>Sauvignon Blanc</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/regi.svg?v=1655512550" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Graduação acoólica</b></div>
+                                      <div class="col-12">
+                                        <p>13%</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/olfat-2.svg?v=1655515285" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Dica de harmonização</b></div>
+                                      <div class="col-12">
+                                        <p>Iscas de carne com pimentão, macarrão à
+                                          bolonhesa, quiche de
+                                          tomate com manjericão</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <strong class="title-md mb-3">R$ 35,00</strong>
+                        <div class="card-link mt-4 mb-2">
+                          <a href="#" class="btn btn-primary fs-5 p-3 w-100">Quero esse</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-4 mt-5">
+                  <div class="card text-center border-none">
+                    <img src="./assets/img/brancos/Bodegaza-Chardonnay.png" class="card-img-top"
+                      alt="Vinho branco Bodegaza Chardonnay" />
+                    <h2 class="cards-title mt-3">Bodegaza Chardonnay</h2>
+                    <div class="card-body">
+                      <p>Tem ótima tipicidade varietal, é gostoso de beber e apresenta muito boa relação
+                        preço-qualidade, portanto, perfeito para o consumo cotidiano. De cor vermelho-violáceo
+                        brilhante, com aroma de frutas vermelhas, ervas e especiarias. Na boca é saboroso, frutado,
+                        com médio-corpo e taninos macios.</p>
+                      <div class="accordion" id="features">
+                        <div class="accordion-item border-0 mt-4 mb-4">
+                          <h2 class="accordion-header text-start" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <button class="title-sm" type="button">
+                              Características<i class="bi bi-chevron-compact-down fs-1 ms-3"></i>
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#features">
+                            <div class="accordion-body">
+                              <ul class="text-start p-0">
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/proced.svg?v=1655515711" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Produtor</b></div>
+                                      <div class="col-12">
+                                        <p>Vinícola Aguirre</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/pais-1.svg?v=1655512288" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Região/ País</b></div>
+                                      <div class="col-12">
+                                        <p>Valle Central, Chile</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/uva.svg?v=1655515544" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Uvas</b></div>
+                                      <div class="col-12">
+                                        <p>Chardonnay</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/regi.svg?v=1655512550" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Graduação acoólica</b></div>
+                                      <div class="col-12">
+                                        <p>13%</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/olfat-2.svg?v=1655515285" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Dica de harmonização</b></div>
+                                      <div class="col-12">
+                                        <p>Iscas de carne com pimentão, macarrão à
+                                          bolonhesa, quiche de
+                                          tomate com manjericão</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <strong class="title-md mb-3">R$ 35,00</strong>
+                        <div class="card-link mt-4 mb-2">
+                          <a href="#" class="btn btn-primary fs-5 p-3 w-100">Quero esse</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-4 mt-5">
+                  <div class="card text-center border-none">
+                    <img src="./assets/img/brancos/Kumala-Colombard.png" class="card-img-top"
+                      alt="Vinho branco Kumala Colombard" />
+                    <h2 class="cards-title mt-3">Kumala Colombard</h2>
+                    <div class="card-body">
+                      <p>Tem ótima tipicidade varietal, é gostoso de beber e apresenta muito boa relação
+                        preço-qualidade, portanto, perfeito para o consumo cotidiano. De cor vermelho-violáceo
+                        brilhante, com aroma de frutas vermelhas, ervas e especiarias. Na boca é saboroso, frutado,
+                        com médio-corpo e taninos macios.</p>
+                      <div class="accordion" id="features">
+                        <div class="accordion-item border-0 mt-4 mb-4">
+                          <h2 class="accordion-header text-start" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <button class="title-sm" type="button">
+                              Características<i class="bi bi-chevron-compact-down fs-1 ms-3"></i>
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#features">
+                            <div class="accordion-body">
+                              <ul class="text-start p-0">
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/proced.svg?v=1655515711" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Produtor</b></div>
+                                      <div class="col-12">
+                                        <p>Viña Undurraga</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/pais-1.svg?v=1655512288" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Região/ País</b></div>
+                                      <div class="col-12">
+                                        <p>Valle Central, Chile</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/uva.svg?v=1655515544" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Uvas</b></div>
+                                      <div class="col-12">
+                                        <p>Carmenérè</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/regi.svg?v=1655512550" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Graduação acoólica</b></div>
+                                      <div class="col-12">
+                                        <p>13%</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/olfat-2.svg?v=1655515285" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Dica de harmonização</b></div>
+                                      <div class="col-12">
+                                        <p>Iscas de carne com pimentão, macarrão à
+                                          bolonhesa, quiche de
+                                          tomate com manjericão</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <strong class="title-md mb-3">R$ 39,90</strong>
+                        <div class="card-link mt-4 mb-2">
+                          <a href="#" class="btn btn-primary fs-5 p-3 w-100">Quero esse</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="roses">
+              <div class="row">
+                <h1 class="title mt-4 mb-3 p-4">Vinhos Rosés</h1>
+              </div>
+              <div class="row d-flex justify-content-center">
+                <div class="col-sm-10 col-md-6 col-lg-4 mt-5">
+                  <div class="card text-center border-none">
+                    <img src="./assets/img/roses/Nederburg-Rose.png" class="card-img-top"
+                      alt="Vinho rosé Nederburg Rosé" />
+                    <h2 class="cards-title mt-3">Nederburg Rosé</h2>
+                    <div class="card-body">
+                      <p>Tem ótima tipicidade varietal, é gostoso de beber e apresenta muito boa relação
+                        preço-qualidade, portanto, perfeito para o consumo cotidiano. De cor vermelho-violáceo
+                        brilhante, com aroma de frutas vermelhas, ervas e especiarias. Na boca é saboroso, frutado,
+                        com médio-corpo e taninos macios.</p>
+                      <div class="accordion" id="features">
+                        <div class="accordion-item border-0 mt-4 mb-4">
+                          <h2 class="accordion-header text-start" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <button class="title-sm" type="button">
+                              Características<i class="bi bi-chevron-compact-down fs-1 ms-3"></i>
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#features">
+                            <div class="accordion-body">
+                              <ul class="text-start p-0">
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/proced.svg?v=1655515711" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Produtor</b></div>
+                                      <div class="col-12">
+                                        <p>Viña Undurraga</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/pais-1.svg?v=1655512288" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Região/ País</b></div>
+                                      <div class="col-12">
+                                        <p>Valle Central, Chile</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/uva.svg?v=1655515544" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Uvas</b></div>
+                                      <div class="col-12">
+                                        <p>Carmenérè</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/regi.svg?v=1655512550" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Graduação acoólica</b></div>
+                                      <div class="col-12">
+                                        <p>13%</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/olfat-2.svg?v=1655515285" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Dica de harmonização</b></div>
+                                      <div class="col-12">
+                                        <p>Iscas de carne com pimentão, macarrão à
+                                          bolonhesa, quiche de
+                                          tomate com manjericão</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <strong class="title-md mb-3">R$ 39,90</strong>
+                        <div class="card-link mt-4 mb-2">
+                          <a href="#" class="btn btn-primary fs-5 p-3 w-100">Quero esse</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane active" id="tintos">
+              <div class="row">
+                <h1 class="title mt-4 mb-3 p-4">Vinhos Tintos</h1>
+              </div>
+              <div class="row d-flex justify-content-center">
+                <div class="col-sm-10 col-md-6 col-lg-4 mt-5">
+                  <div class="card text-center border-none">
+                    <img src="./assets/img/tintos/Undurraga-Carmenere.png" class="card-img-top"
+                      alt="Vinho tinto Undurraga Carmenere" />
+                    <h2 class="cards-title mt-3">Undurraga Carménère</h2>
+                    <div class="card-body">
+                      <p>Tem ótima tipicidade varietal, é gostoso de beber e apresenta muito boa relação
+                        preço-qualidade, portanto, perfeito para o consumo cotidiano. De cor vermelho-violáceo
+                        brilhante, com aroma de frutas vermelhas, ervas e especiarias. Na boca é saboroso,
+                        frutado,
+                        com médio-corpo e taninos macios.</p>
+                      <div class="accordion" id="features">
+                        <div class="accordion-item border-0 mt-4 mb-4">
+                          <h2 class="accordion-header text-start" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <button class="title-sm" type="button">
+                              Características<i class="bi bi-chevron-compact-down fs-1 ms-3"></i>
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#features">
+                            <div class="accordion-body">
+                              <ul class="text-start p-0">
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/proced.svg?v=1655515711" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Produtor</b></div>
+                                      <div class="col-12">
+                                        <p>Viña Undurraga</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/pais-1.svg?v=1655512288" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Região/ País</b></div>
+                                      <div class="col-12">
+                                        <p>Valle Central, Chile</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/uva.svg?v=1655515544" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Uvas</b></div>
+                                      <div class="col-12">
+                                        <p>Carmenérè</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/regi.svg?v=1655512550" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Graduação acoólica</b></div>
+                                      <div class="col-12">
+                                        <p>13%</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/olfat-2.svg?v=1655515285" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Dica de harmonização</b></div>
+                                      <div class="col-12">
+                                        <p>Iscas de carne com pimentão, macarrão à
+                                          bolonhesa, quiche de
+                                          tomate com manjericão</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <strong class="title-md mb-3">R$ 39,90</strong>
+                        <div class="card-link mt-4 mb-2">
+                          <a href="#" class="btn btn-primary fs-5 p-3 w-100">Quero esse</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-4 mt-5">
+                  <div class="card text-center border-none">
+                    <img src="./assets/img/tintos/Foye-Cabernet-Sauvignon.png" class="card-img-top"
+                      alt="Vinho tinto Foye Reserva Cabernet Sauvignon" />
+                    <h2 class="cards-title mt-3">Foye Reserva Cabernet Sauvignon</h2>
+                    <div class="card-body">
+                      <p>Produzido apenas com uvas selecionadas das vinhas da Bouchon localizadas no Vale do
+                        Maule, uma das regiões mais tradicionais do vinho no Chile. Um exemplar frutado, com
+                        taninos maduros e macios, muito agradável e com boa persistência, excelente para quem
+                        gosta da uva Cabernet Sauvignon adaptada no Chile!</p>
+                      <div class="accordion" id="features">
+                        <div class="accordion-item border-0 mt-4 mb-4">
+                          <h2 class="accordion-header text-start" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
+                            <button class="title-sm" type="button">
+                              Características<i class="bi bi-chevron-compact-down fs-1 ms-3"></i>
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#features">
+                            <div class="accordion-body">
+                              <ul class="text-start p-0">
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/proced.svg?v=1655515711" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Produtor</b></div>
+                                      <div class="col-12">
+                                        <p>Viñas Familiares do Chile - VFC</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/pais-1.svg?v=1655512288" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Região/ País</b></div>
+                                      <div class="col-12">
+                                        <p>Valle del Maule, Chile</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/uva.svg?v=1655515544" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Uvas</b></div>
+                                      <div class="col-12">
+                                        <p>Cabernet Sauvignon</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/regi.svg?v=1655512550" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Graduação acoólica</b></div>
+                                      <div class="col-12">
+                                        <p>13%</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/olfat-2.svg?v=1655515285" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Dica de harmonização</b></div>
+                                      <div class="col-12">
+                                        <p>Ideal para acompanhar carnes vermelhas grelhadas ou assadas</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <strong class="title-md mb-3">R$ 39,90</strong>
+                        <div class="card-link mt-4 mb-2">
+                          <a href="#" class="btn btn-primary fs-5 p-3 w-100">Quero esse</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-4 mt-5">
+                  <div class="card text-center border-none">
+                    <img src="./assets/img/tintos/Mi-Pueblo-Carmenere.png" class="card-img-top"
+                      alt="Vinho tinto Mi Pueblo Carmenere" />
+                    <h2 class="cards-title mt-3">Mi Pueblo Carmenérè</h2>
+                    <div class="card-body">
+                      <p>De cor vermelho rubi e reflexos violetas, aromas de frutas vermelhas e toques de
+                        baunilha, paladar delicado, redondo e com boa persistência, este vinho balanceado e fresco
+                        é uma verdadeira delícia!</p>
+                      <div class="accordion" id="features">
+                        <div class="accordion-item border-0 mt-4 mb-4">
+                          <h2 class="accordion-header text-start" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseOne">
+                            <button class="title-sm" type="button">
+                              Características<i class="bi bi-chevron-compact-down fs-1 ms-3"></i>
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#features">
+                            <div class="accordion-body">
+                              <ul class="text-start p-0">
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/proced.svg?v=1655515711" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Produtor</b></div>
+                                      <div class="col-12">
+                                        <p>Viña Maipo</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/pais-1.svg?v=1655512288" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Região/ País</b></div>
+                                      <div class="col-12">
+                                        <p>Valle del Maipo, Chile</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/uva.svg?v=1655515544" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Uvas</b></div>
+                                      <div class="col-12">
+                                        <p>Carmenérè</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/regi.svg?v=1655512550" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Graduação acoólica</b></div>
+                                      <div class="col-12">
+                                        <p>12,5%</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/olfat-2.svg?v=1655515285" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Dica de harmonização</b></div>
+                                      <div class="col-12">
+                                        <p>Ideal para uma noite de massas, carne de porco ou queijos suaves, como
+                                          gouda e emmental, e até mesmo com uma refeição rica e bem temperada ao
+                                          estilo indiano</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <strong class="title-md mb-3">R$ 35,00</strong>
+                        <div class="card-link mt-4 mb-2">
+                          <a href="#" class="btn btn-primary fs-5 p-3 w-100">Quero esse</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-4 mt-5">
+                  <div class="card text-center border-none">
+                    <img src="./assets/img/tintos/Cordero-Malbec.png" class="card-img-top"
+                      alt="Vinho tinto Cordero con Piel del Lobo Malbec" />
+                    <h2 class="cards-title mt-3">Cordero con Piel del Lobo Malbec</h2>
+                    <div class="card-body">
+                      <p>Por sua coloração, aroma e teor alcoólico, esse vinho passa uma impressão de ser pesado,
+                        forte, como um lobo, mas, ao prová-lo, os taninos são marcantes, porém sedosos, o álcool e
+                        a acidez são equilibrados e a impressão inicial de um vinho parrudo muda para um vinho
+                        sedoso, domado, como um cordeiro.</p>
+                      <div class="accordion" id="features">
+                        <div class="accordion-item border-0 mt-4 mb-4">
+                          <h2 class="accordion-header text-start" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseOne">
+                            <button class="title-sm" type="button">
+                              Características<i class="bi bi-chevron-compact-down fs-1 ms-3"></i>
+                            </button>
+                          </h2>
+                          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#features">
+                            <div class="accordion-body">
+                              <ul class="text-start p-0">
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/proced.svg?v=1655515711" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Produtor</b></div>
+                                      <div class="col-12">
+                                        <p>Mosquita Muerta Wines</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/pais-1.svg?v=1655512288" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Região/ País</b></div>
+                                      <div class="col-12">
+                                        <p>Mendoza, Argentina</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/uva.svg?v=1655515544" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Uvas</b></div>
+                                      <div class="col-12">
+                                        <p>Malbec</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/barrica.svg?v=1655515875" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Maturação</b></div>
+                                      <div class="col-12">
+                                        <p>A fermentação ocorre por um período mínimo de 6 meses em barricas de
+                                          carvalho americanas e francesas</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/regi.svg?v=1655512550" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Graduação acoólica</b></div>
+                                      <div class="col-12">
+                                        <p>13,5%</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/olfat-2.svg?v=1655515285" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Dica de harmonização</b></div>
+                                      <div class="col-12">
+                                        <p>Carnes vermelhas grelhadas e churrasco. Com um bife Ancho fica
+                                          espetacular! É possível harmonizá-lo também com massas, como lasanha à
+                                          bolonhesa</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <strong class="title-md mb-3">R$ 54,90</strong>
+                        <div class="card-link mt-4 mb-2">
+                          <a href="#" class="btn btn-primary fs-5 p-3 w-100">Quero esse</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-4 mt-5">
+                  <div class="card text-center border-none">
+                    <img src="./assets/img/tintos/Norton-Malbec-DOC.png" class="card-img-top"
+                      alt="Vinho tinto Norton D.O.C. Luján de Cuyo" />
+                    <h2 class="cards-title mt-3">Norton D.O.C. Luján de Cuyo</h2>
+                    <div class="card-body">
+                      <p>Um verdadeiro expoente do Malbec argentino. A distinção DOC (Denominação de Origem
+                        Controlada) certifica que as uvas que lhe dão origem provêm exclusivamente de <i>Luján de
+                          Cuyo</i>, uma das regiões mais destacadas da Argentina para a produção de vinho. No
+                        nariz sentimos aromas de frutas vermelhas maduras e pimenta preta. No paladar, os taninos
+                        são macios, apresenta ótima estrutura e um longo final.</p>
+                      <div class="accordion" id="features">
+                        <div class="accordion-item border-0 mt-4 mb-4">
+                          <h2 class="accordion-header text-start" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseOne">
+                            <button class="title-sm" type="button">
+                              Características<i class="bi bi-chevron-compact-down fs-1 ms-3"></i>
+                            </button>
+                          </h2>
+                          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#features">
+                            <div class="accordion-body">
+                              <ul class="text-start p-0">
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/proced.svg?v=1655515711" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Produtor</b></div>
+                                      <div class="col-12">
+                                        <p>Bodega Norton</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/pais-1.svg?v=1655512288" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Região/ País</b></div>
+                                      <div class="col-12">
+                                        <p>Luján de Cuyo, Argentina</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/uva.svg?v=1655515544" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Uvas</b></div>
+                                      <div class="col-12">
+                                        <p>Malbec</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/barrica.svg?v=1655515875" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Maturação</b></div>
+                                      <div class="col-12">
+                                        <p>Envelhece 6 meses em barricas de carvalho francês, 9 meses em piscinas de
+                                          concreto, e em seguida 3 meses em garrafa antes de ser comercializado</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/regi.svg?v=1655512550" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Graduação acoólica</b></div>
+                                      <div class="col-12">
+                                        <p>14,5%</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/olfat-2.svg?v=1655515285" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Dica de harmonização</b></div>
+                                      <div class="col-12">
+                                        <p>Carnes vermelhas grelhadas, churrasco, massas com molho intenso e
+                                          queijos.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <strong class="title-md mb-3">R$ 74,90</strong>
+                        <div class="card-link mt-4 mb-2">
+                          <a href="#" class="btn btn-primary fs-5 p-3 w-100">Quero esse</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-4 mt-5">
+                  <div class="card text-center border-none">
+                    <img src="./assets/img/tintos/Porca-de-Murca.png" class="card-img-top"
+                      alt="Vinho tinto Porca de Murca" />
+                    <h2 class="cards-title mt-3">Porca de Murça</h2>
+                    <div class="card-body">
+                      <p>Um vinho jovem de cor vermelho-rubi, com aromas de frutos frescos e notas de cereja. Na
+                        prova, é complementado por uma maciez que no final revela vigor graças a sua acidez
+                        equilibrada. É a marca do Douro mais vendida no mundo e o tinto, um dos vinhos mais
+                        reconhecidos da região.</p>
+                      <div class="accordion" id="features">
+                        <div class="accordion-item border-0 mt-4 mb-4">
+                          <h2 class="accordion-header text-start" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseOne">
+                            <button class="title-sm" type="button">
+                              Características<i class="bi bi-chevron-compact-down fs-1 ms-3"></i>
+                            </button>
+                          </h2>
+                          <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#features">
+                            <div class="accordion-body">
+                              <ul class="text-start p-0">
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/proced.svg?v=1655515711" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Produtor</b></div>
+                                      <div class="col-12">
+                                        <p>Real Companhia Velha</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/pais-1.svg?v=1655512288" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Região/ País</b></div>
+                                      <div class="col-12">
+                                        <p>DOC Douro, Portugal</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/uva.svg?v=1655515544" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Uvas</b></div>
+                                      <div class="col-12">
+                                        <p>Touriga Franca, Touriga Nacional, Tinta Roriz e Tinta Barroca</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/regi.svg?v=1655512550" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Graduação acoólica</b></div>
+                                      <div class="col-12">
+                                        <p>13,5%</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/olfat-2.svg?v=1655515285" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Dica de harmonização</b></div>
+                                      <div class="col-12">
+                                        <p>Massas com molhos de tomate, grelhados e carnes brancas, como bacalhau.
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <strong class="title-md mb-3">R$ 62,90</strong>
+                        <div class="card-link mt-4 mb-2">
+                          <a href="#" class="btn btn-primary fs-5 p-3 w-100">Quero esse</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-4 mt-5">
+                  <div class="card text-center border-none">
+                    <img src="./assets/img/tintos/EA-Cartuxa.jpg" class="card-img-top" alt="Vinho tinto EA Cartuxa" />
+                    <h2 class="cards-title mt-3">EA Cartuxa</h2>
+                    <div class="card-body">
+                      <p>A linha EA da Cartuxa é composta pelos chamados 'vinhos do ano', de características
+                        típicas de vinhos jovens e fáceis de beber. Apresenta coloração grená, límpido e
+                        brilhante. Aromas frutados, com notas de vegetais. Em boca, é um vinho bastante fresco,
+                        com uma ligeira adstringência.</p>
+                      <div class="accordion" id="features">
+                        <div class="accordion-item border-0 mt-4 mb-4">
+                          <h2 class="accordion-header text-start" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseOne">
+                            <button class="title-sm" type="button">
+                              Características<i class="bi bi-chevron-compact-down fs-1 ms-3"></i>
+                            </button>
+                          </h2>
+                          <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#features">
+                            <div class="accordion-body">
+                              <ul class="text-start p-0">
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/proced.svg?v=1655515711" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Produtor</b></div>
+                                      <div class="col-12">
+                                        <p>Cartuxa, Fundação Eugénio de Almeida</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/pais-1.svg?v=1655512288" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Região/ País</b></div>
+                                      <div class="col-12">
+                                        <p>Évora - Alentejo, Portugal</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/uva.svg?v=1655515544" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Uvas</b></div>
+                                      <div class="col-12">
+                                        <p>Aragonez, Trincadeira, Alicante Bouschet, Syrah e Castelão</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/regi.svg?v=1655512550" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Graduação acoólica</b></div>
+                                      <div class="col-12">
+                                        <p>14%</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/olfat-2.svg?v=1655515285" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Dica de harmonização</b></div>
+                                      <div class="col-12">
+                                        <p>Harmonize-o com carnes vermelhas, grelhados e queijos médios e pizza
+                                          para uma experiência gastronômica memorável</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <strong class="title-md mb-3">R$ 74,90</strong>
+                        <div class="card-link mt-4 mb-2">
+                          <a href="#" class="btn btn-primary fs-5 p-3 w-100">Quero esse</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-4 mt-5 mb-5">
+                  <div class="card text-center border-none">
+                    <img src="./assets/img/tintos/Yellow-Tail-Shiraz.png" class="card-img-top"
+                      alt="Vinho tinto Yellow Tail Shiraz" />
+                    <h2 class="cards-title mt-3">Yellow Tail Shiraz</h2>
+                    <div class="card-body">
+                      <p>A marca ícone da Austrália, proveniente da região vinícola de Riverina, Austrália do Sul,
+                        destaca-se pela riqueza da uva Shiraz, conhecida por seu sabor rico e encorpado. De
+                        coloração rubi profundo, mostra aromas que remetem frutas escuras maduras, com um toque de
+                        caramelo e baunilha. Um clássico vinho australiano, com taninos suaves, fácil de beber,
+                        vibrante e rico.</p>
+                      <div class="accordion" id="features">
+                        <div class="accordion-item border-0 mt-4 mb-4">
+                          <h2 class="accordion-header text-start" data-bs-toggle="collapse"
+                            data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseOne">
+                            <button class="title-sm" type="button">
+                              Características<i class="bi bi-chevron-compact-down fs-1 ms-3"></i>
+                            </button>
+                          </h2>
+                          <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#features">
+                            <div class="accordion-body">
+                              <ul class="text-start p-0">
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/proced.svg?v=1655515711" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Produtor</b></div>
+                                      <div class="col-12">
+                                        <p>Yellow Tail</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/pais-1.svg?v=1655512288" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Região/ País</b></div>
+                                      <div class="col-12">
+                                        <p>South Eastern, Austrália</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/uva.svg?v=1655515544" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Uvas</b></div>
+                                      <div class="col-12">
+                                        <p>Shiraz</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/barrica.svg?v=1655515875" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Maturação</b></div>
+                                      <div class="col-12">
+                                        <p>Amadurece 4 meses em carvalho francês e americano</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text mb-2">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/regi.svg?v=1655512550" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Graduação acoólica</b></div>
+                                      <div class="col-12">
+                                        <p>13,5%</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="text">
+                                  <div class="row ">
+                                    <div class="col-2 d-flex flex-column justify-content-start">
+                                      <img src="https://cdn.dooca.store/33560/features/olfat-2.svg?v=1655515285" />
+                                    </div>
+                                    <div class="col-10 p-0">
+                                      <div class="col-12"><b>Dica de harmonização</b></div>
+                                      <div class="col-12">
+                                        <p>Ideal para acompanhar massas com molho vermelho, queijos, carnes
+                                          vermelhas, pizzas e hambúrguer.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <strong class="title-md mb-3">R$ 69,90</strong>
+                        <div class="card-link mt-4 mb-2">
+                          <a href="#" class="btn btn-primary fs-5 p-3 w-100">Quero esse</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12 text-center">
+          <img class="mb-3" src="./assets/img/logo2.png" width="200px" alt="Logo Abra A Garrafa" />
+          <p>A AbraAGarrafa nasce para trazer a cultura do vinho de fácil acesso, onde oferecemos a praticidade
+            de apreciar um bom e saboroso vinho sem complicações e sem firulas.</p>
+          <p>Como uma palavra mágica, apenas: <s>abracadabra</s> <i>abraagarrafa!</i> e desfrute desse belo e
+            prazeroso universo que existe dentro
+            deste elegante líquido</p>
+        </div>
+        <div class="row mt-3">
+           <div class="col-12 text-center">
+              <h3 class="title-md mb-3">Social</h3>
+             <a href="#"><img class="me-2" src="./assets/img/logos/instagram.svg"/></a>
+             <a href="#"><img class="" src="./assets/img/logos/wpp.svg"/></a>
+           </div>
+           
+        </div>
+        
+      </div>
+    </div>
+
+
+
+
+    <!-- Fim da Carta de Vinhos -->
+
 
   </main>
   <script src="script.js"></script>
